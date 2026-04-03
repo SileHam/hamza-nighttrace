@@ -1,0 +1,7 @@
+APP_NAME = "HAMZA // NIGHTTRACE"
+APP_CODENAME = "NightTrace"
+APP_AUTHOR = "HAMZA"
+APP_GITHUB_HANDLE = "Hamza.Zniber"
+APP_TAGLINE = "Hacker-style TCP reconnaissance console built by HAMZA."
+APP_THEME = "hacker-style"
+__version__ = "0.2.0"
