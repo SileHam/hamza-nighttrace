@@ -3,14 +3,11 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "hamza-nighttrace"
+name = "nighttrace"
 version = "0.2.0"
-description = "HAMZA // NIGHTTRACE is a hacker-style TCP network scanner with CIDR sweeps, OS hints, JSON export, and a live dashboard."
+description = "NIGHTTRACE is a hacker-style TCP network scanner with CIDR sweeps, OS hints, JSON export, and a live dashboard."
 readme = "README.md"
 requires-python = ">=3.10"
-authors = [
-    { name = "HAMZA" },
-]
 keywords = ["network-scanner", "tcp", "recon", "security", "port-scanner", "dashboard"]
 dependencies = [
     "Flask>=3.0,<4.0",

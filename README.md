@@ -1,11 +1,10 @@
-# HAMZA // NIGHTTRACE
+# NIGHTTRACE
 
-HAMZA // NIGHTTRACE is a hacker-style TCP reconnaissance console built by HAMZA. It scans target hosts, detects open ports, guesses likely services, attempts lightweight banner grabbing, generates heuristic OS hints, exports JSON reports, and can run from a live browser dashboard.
+NIGHTTRACE is a hacker-style TCP reconnaissance console. It scans target hosts, detects open ports, guesses likely services, attempts lightweight banner grabbing, generates heuristic OS hints, exports JSON reports, and can run from a live browser dashboard.
 
 ## Identity
 
-- Operator: `HAMZA`
-- GitHub handle: `Hamza.Zniber`
+- Project name: `NIGHTTRACE`
 - Interface style: `hacker-style`
 - Documentation language: `English`
 

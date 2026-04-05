@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from signalscope import APP_AUTHOR, APP_TAGLINE, APP_NAME, __version__
+from signalscope import APP_TAGLINE, APP_NAME, __version__
 from signalscope.core import TargetReport
 
 
@@ -16,7 +16,7 @@ def format_reports(
     total_open_ports = sum(report.open_port_count for report in reports)
     lines = [
         f"{APP_NAME} v{__version__} :: hacker-style TCP recon console",
-        f"Operator: {APP_AUTHOR} | {APP_TAGLINE}",
+        APP_TAGLINE,
         (
             f"Targets: {len(reports)} | Open ports: {total_open_ports} | Ports: {port_expression} "
             f"| Timeout: {timeout:.2f}s | Port workers: {workers} | Host workers: {host_workers}"

@@ -3,7 +3,7 @@ from __future__ import annotations
 from threading import Lock
 from typing import Any
 
-from signalscope import APP_AUTHOR, APP_GITHUB_HANDLE, APP_NAME, APP_TAGLINE, APP_THEME
+from signalscope import APP_NAME, APP_TAGLINE, APP_THEME
 from signalscope.core import (
     build_report_payload,
     empty_report_payload,
@@ -14,8 +14,6 @@ from signalscope.core import (
 
 BRAND = {
     "name": APP_NAME,
-    "author": APP_AUTHOR,
-    "github_handle": APP_GITHUB_HANDLE,
     "tagline": APP_TAGLINE,
     "theme": APP_THEME,
 }
@@ -434,7 +432,7 @@ TEMPLATE = """
     <section class="hero">
       <p class="eyebrow">{{ brand.name }}</p>
       <h1>Launch recon sweeps, classify exposed services, and review live host intel from one console.</h1>
-      <p class="subhead">{{ brand.tagline }} Operator profile: {{ brand.author }}. GitHub handle recorded for portfolio use: {{ brand.github_handle }}.</p>
+      <p class="subhead">{{ brand.tagline }} Launch recon sweeps, classify exposed services, and review results from a single local console.</p>
 
       <div class="meta">
         <div class="card">
@@ -571,7 +569,7 @@ TEMPLATE = """
     {% endif %}
     <section class="footer">
       <strong style="color: var(--accent);">{{ brand.name }}</strong><br>
-      Operator: {{ brand.author }} | GitHub handle: {{ brand.github_handle }} | Theme: {{ brand.theme }}
+      Theme: {{ brand.theme }}
     </section>
   </main>
 </body>

@@ -9,7 +9,7 @@ import ipaddress
 import json
 import socket
 
-from signalscope import APP_AUTHOR, APP_CODENAME, APP_GITHUB_HANDLE, APP_NAME, APP_THEME, __version__
+from signalscope import APP_CODENAME, APP_NAME, APP_THEME, __version__
 
 COMMON_SERVICE_PORTS = {
     20: "FTP-DATA",
@@ -390,8 +390,6 @@ def empty_report_payload(
         "scanner": {
             "name": APP_NAME,
             "codename": APP_CODENAME,
-            "operator": APP_AUTHOR,
-            "github_handle": APP_GITHUB_HANDLE,
             "theme": APP_THEME,
             "version": __version__,
             "mode": "tcp-connect",
@@ -527,7 +525,7 @@ def _recv_banner(sock: socket.socket) -> str:
 
 def _build_probe_payload(port: int) -> bytes | None:
     if port in HTTP_PROBE_PORTS:
-        user_agent = f"User-Agent: {APP_CODENAME}/{__version__} ({APP_AUTHOR})\r\n".encode()
+        user_agent = f"User-Agent: {APP_CODENAME}/{__version__}\r\n".encode()
         return (
             b"HEAD / HTTP/1.0\r\n"
             b"Host: nighttrace.local\r\n"
